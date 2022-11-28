@@ -1,0 +1,29 @@
+@font-face {
+  font-family: theme('fontFamily.primary');
+  font-weight: 300;
+  font-style: normal;
+  src: url("../assets/fonts/GraphikLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: theme('fontFamily.primary');
+  font-weight: normal;
+  font-style: normal;
+  src: url("../assets/fonts/GraphikRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: theme('fontFamily.primary');
+  font-weight: 500;
+  font-style: normal;
+  src: url("../assets/fonts/GraphikMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: theme('fontFamily.primary');
+  font-weight: 700;
+  font-style: normal;
+  src: url("../assets/fonts/GraphikBold.otf") format("opentype");
+}
+
+
