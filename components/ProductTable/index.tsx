@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { useIntl } from 'react-intl';
 import { PRODUCT_THUMBNAIL } from '../../constants/product-thumbnail';
@@ -30,7 +31,7 @@ const ProductTable: React.FC<IProductTableProps> = ({ productList, currency }) =
             <td className="w-14 sm:w-[104px] py-1.5 sm:py-2.5">
               <div className="relative aspect-square w-12 h-12 sm:w-16 sm:h-16">
                 <img
-                  src={PRODUCT_THUMBNAIL[thumbnail as keyof typeof PRODUCT_THUMBNAIL]}
+                  src={PRODUCT_THUMBNAIL[thumbnail as keyof typeof PRODUCT_THUMBNAIL]?.src}
                   alt={name}
                   className="absolute object-cover"
                 />

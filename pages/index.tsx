@@ -1,7 +1,7 @@
-import OrderCard from "../../components/OrderCard";
+import OrderCard from "../components/OrderCard";
 
-import { PRODUCT_THUMBNAIL_GOLF, PRODUCT_THUMBNAIL_TENNIS } from '../../constants/product-thumbnail';
-import { SUBSCRIPTION_ORDER, PAID, UNFULFILLED } from '../../constants/order';
+import { PRODUCT_THUMBNAIL_GOLF, PRODUCT_THUMBNAIL_TENNIS } from '../constants/product-thumbnail';
+import { SUBSCRIPTION_ORDER, PAID, UNFULFILLED } from '../constants/order';
 
 const SAMPLE_USER_PROFILE = {
   firstName: 'Ryan',
