@@ -1,0 +1,6 @@
+/public/static/**/*
+/public/static/**/*.js
+*.test.tsx
+*.test.ts
+.next
+coverage
