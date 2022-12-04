@@ -22,6 +22,8 @@ module.exports = {
       },
       backgroundColor: {
         body: '#F4F5F7',
+        overlay: 'rgba(0,0,0,0.3)',
+        loading: 'rgba(0,0,0,0.8)',
       },
     },
   },
