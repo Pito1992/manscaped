@@ -61,14 +61,16 @@ const ProductTable: React.FC<IProductTableProps> = ({ isEditable }) => {
   }
 
   const onToggleAllCheckboxes = (e: React.ChangeEvent<HTMLInputElement>) => {
-    checkAll(e.target.checked);
-    check(productList.map(() => e.target.checked));
+    const checkedValue = e.target.checked;
+    checkAll(checkedValue);
+    check(productList.map(() => checkedValue));
   }
 
   const onToggleCheckbox = (index: number) => (e: React.ChangeEvent<HTMLInputElement>) => {
+    const checkedValue = e.target.checked;
     check((prevState) => {
       const newState = [...prevState];
-      newState[index] = e.target.checked;
+      newState[index] = checkedValue;
       checkAll(newState.every(Boolean));
       return newState;
     });
@@ -91,7 +93,7 @@ const ProductTable: React.FC<IProductTableProps> = ({ isEditable }) => {
                 <input
                   data-testid="product-select-all"
                   type="checkbox"
-                  defaultChecked={isCheckAll}
+                  checked={isCheckAll}
                   onChange={onToggleAllCheckboxes}
                   className="cursor-pointer"
                 />
@@ -120,7 +122,7 @@ const ProductTable: React.FC<IProductTableProps> = ({ isEditable }) => {
                     <input
                       data-testid="product-select"
                       type="checkbox"
-                      defaultChecked={isCheck[index]}
+                      checked={isCheck[index]}
                       onChange={onToggleCheckbox(index)}
                       className="cursor-pointer"
                     />
